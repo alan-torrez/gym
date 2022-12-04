@@ -5,7 +5,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/*Header Inicio*/
 
 header{
     display: flex;
@@ -52,9 +51,6 @@ body{
     padding-bottom: 100px;
 }
 
-/*Header Fin*/
-
-/* Index inicio*/
 
 .imgInicio img{
     width: 450px;
@@ -62,11 +58,11 @@ body{
 }
 
 .imgInicio{
-    margin: 100px 150px 100px 100px;
+    margin: 100px;
 }
 
 .tituloInicio{
-    margin:150px 150px 150px 300px;
+    margin:auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -96,11 +92,23 @@ body{
 .inicio{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* Index Fin*/
+@media(max-width:1367px){
+    .inicio{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tituloInicio{
+        margin-top: 50px;
+    }
+    .tituloInicio p{
+        font-size: 50px;
+    }
+}
 
-/*Aprende inicio*/
 
 .rutina img{
     width: 500px;
@@ -125,9 +133,6 @@ body{
     }
 }
 
-/*Aprende fin*/
-
-/*Planes inicio*/
 .container{
     height: 430px;
     display: flex;
@@ -142,7 +147,7 @@ body{
     overflow:hidden;
     margin:10px;
     text-align: center;
-    background-color: 
+    background-color:
     rgba(127, 255, 212, 0.218);
     border: solid 5px aquamarine;
 }
@@ -171,40 +176,43 @@ body{
     border-radius: 25px;
 }
 
-/*Planes fin*/
-
-/*Sobre mi inicio*/
 
 .tarjetasSobreMi{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.imgSobreMi1{
+.imgSobreMi{
     width: 250px;
-    margin: 50px 0px 50px 100px;
-}
-
-.imgSobreMi2{
-    width: 250px;
-    margin: 50px 100px 50px 0px;
+    margin: 50px;
 }
 
 .target{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.tituloSobre{
+.target h3{
     font-size: 25px;
     font-weight: bold;
     color:white;
 }
 
+.target p{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .sobreMi{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 50px;
 }
 
 .sobreMi .titulo{
@@ -213,20 +221,28 @@ body{
     font-weight: bold;
 }
 
-.sobreMi .info{
-    color: white;
-    margin: 40px 300px;
-    letter-spacing: 2px;
-    font-size: 20px;
-    font-weight: bold;
+@media(max-width:900px){
+    .sobreMi{
+        flex-wrap: wrap;
+    }
+    .imgSobreMi{
+        display: none;
+    }
+
+    .tarjetasSobreMi{
+        gap: 30px;
+    }
+
+    .target p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
 }
 
-/*Sobre mi fin*/
 
-/*Contacto inicio*/
 
 .formulario form{
-    margin:150px
+    margin:150px 0px;
 }
 
 form{
@@ -260,19 +276,27 @@ textarea{
     letter-spacing: 3px;
     font-weight: bold;
     color: white;
-    margin:150px;
+    margin:150px 0px;
     width: 800px;
 }
 .infoForm p{
     margin: 30px 0px;
 }
-.Contacto{
+.contacto{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/*Contacto fin*/
+@media(max-width:900px){
 
-/*Footer inicio*/
+    .infoForm{
+        margin:50px;
+    }
+
+}
+
 
 footer{
     background-color: black;
@@ -287,5 +311,3 @@ footer p{
     margin: 30px;
     color: white;
 }
-
-/*Footer fin*/
