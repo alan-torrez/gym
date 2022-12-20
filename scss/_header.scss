@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: black;
+    align-items: center;
+    padding: 20px;
+
+    .logo{
+        a{
+            text-decoration: none;
+            font-size: 40px;
+            font-weight: bold;
+            color:aquamarine;
+        }
+    }
+
+    nav{
+        .navLink{
+            text-decoration: none;
+            padding: 0px 10px;
+            color: aquamarine;
+        }
+        .navLink:hover{
+            background-color: #353535;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding-top: 20px;
+    }
+    .navLink{
+        font-size: 15px;
+    }
+}    
